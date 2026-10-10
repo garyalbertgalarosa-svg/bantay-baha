@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bantay Baha Flood Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌊 Bantay Baha</h1>
+    <p>Community Flood Monitoring Dashboard</p>
+    <p id="lastUpdated">Waiting for sensor data...</p>
+  </header>
+
+  <main>
+    <section class="summary">
+      <article class="card">
+        <h2>Current Water Level</h2>
+        <p><span id="currentLevel">--</span> cm</p>
+      </article>
+      <article class="card">
+        <h2>Flood Status</h2>
+        <p id="currentStatus">Waiting...</p>
+      </article>
+      <article class="card">
+        <h2>Average Level</h2>
+        <p><span id="averageLevel">--</span> cm</p>
+      </article>
+      <article class="card">
+        <h2>Trend</h2>
+        <p id="trend">--</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Recent Water Levels</h2>
+      <canvas id="levelChart" height="120"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>Latest Sensor Readings</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Sensor</th>
+              <th>Water Level (cm)</th>
+              <th>Status</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="readingsTable">
+            <tr><td colspan="4">Loading readings...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Bantay Baha — Simulated sensor data for educational use.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

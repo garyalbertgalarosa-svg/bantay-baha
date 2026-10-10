@@ -1,0 +1,14 @@
+
+{
+  "name": "bantay-baha",
+  "version": "1.0.0",
+  "description": "Bantay Baha Flood Monitor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sensor": "node sensor.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
