@@ -1,0 +1,52 @@
+# Bantay Baha Flood Monitor — Sprint Plan
+
+## 1. User Stories and Acceptance Criteria
+
+### User Story 1: Resident
+
+As a resident living near a creek, I want to see the current water level so that I can make informed safety decisions.
+
+Acceptance criteria:
+
+- The dashboard displays the latest water level in centimeters.
+- Normal is below 100 cm, Alert is 100–149 cm, and Danger is 150 cm or higher.
+- The dashboard refreshes automatically every five seconds.
+
+### User Story 2: Barangay Official
+
+As a barangay official, I want to view recent readings and water-level trends so that I can monitor flood conditions.
+
+Acceptance criteria:
+
+- A line chart displays recent water-level readings.
+- A table displays the ten latest readings.
+- The dashboard displays the average, minimum, maximum, status counts, and trend.
+
+### User Story 3: Resident Seeking Safety Information
+
+As a resident, I want to receive a bilingual flood advisory so that I know what actions to take.
+
+Acceptance criteria:
+
+- A Generate Advisory button requests an advisory based on the readings.
+- The advisory uses Filipino and English and contains no more than three sentences.
+- A rule-based fallback appears if the AI service fails.
+
+## 2. Sprint Backlog
+
+- [x] Create GitHub repository and project files.
+- [ ] Build the back-end API.
+- [ ] Validate and store water-level readings.
+- [ ] Create the IoT sensor simulator.
+- [ ] Build the mobile-responsive dashboard.
+- [ ] Add the line chart and readings table.
+- [ ] Implement data analytics.
+- [ ] Add AI advisory and fallback.
+- [ ] Test the application.
+- [ ] Deploy to Render.
+- [ ] Complete REFLECTION.md.
+- [ ] Write README.md and prepare the demonstration recording.
+
+## 3. SDLC Model
+
+This lab follows the Agile SDLC model because the application is built in small, prioritized tasks that can be tested and improved throughout the sprint.
